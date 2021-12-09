@@ -40,19 +40,23 @@ justify-content: space-between;// utliser pour les éléments verticaux comme pa
 align-items: center; // utiliser pour les éléments horizontaux
 background-image:${props => `url("/images/${props.bgImg}")`};
 `;
+
 const ItemText = styled.div`
 padding-top: 15vh;
 text-align: center;
 `;
+
 const ButtonGroup = styled.div`
 display: flex;
 margin-bottom: 30px;
 display: flex;
 margin-bottom: 30px;
+
 @media (max-width:768px){
     flex-direction: column;
 }
 `;
+
 const LeftButton = styled.div`
 background-color: rgba(23,26,32,0.8);
 height: 40px;
@@ -68,6 +72,7 @@ font-size: 12px;
 cursor: pointer;
 margin: 8px;
 `;
+
 const RightButton = styled(LeftButton)`
 background:white ;
 opacity: 0.65;
